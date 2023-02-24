@@ -16,6 +16,8 @@
 		72468E3F29A938990045C3B5 /* MutchRecordAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72468E3E29A938990045C3B5 /* MutchRecordAppTests.swift */; };
 		72468E4929A938990045C3B5 /* MutchRecordAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72468E4829A938990045C3B5 /* MutchRecordAppUITests.swift */; };
 		72468E4B29A938990045C3B5 /* MutchRecordAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72468E4A29A938990045C3B5 /* MutchRecordAppUITestsLaunchTests.swift */; };
+		72468E5829A949D90045C3B5 /* RecordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72468E5729A949D90045C3B5 /* RecordViewController.swift */; };
+		72468E5A29A94ED70045C3B5 /* ShowRecordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72468E5929A94ED70045C3B5 /* ShowRecordViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +51,8 @@
 		72468E4429A938990045C3B5 /* MutchRecordAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MutchRecordAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		72468E4829A938990045C3B5 /* MutchRecordAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MutchRecordAppUITests.swift; sourceTree = "<group>"; };
 		72468E4A29A938990045C3B5 /* MutchRecordAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MutchRecordAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		72468E5729A949D90045C3B5 /* RecordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordViewController.swift; sourceTree = "<group>"; };
+		72468E5929A94ED70045C3B5 /* ShowRecordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowRecordViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +103,8 @@
 		72468E2629A938970045C3B5 /* MutchRecordApp */ = {
 			isa = PBXGroup;
 			children = (
+				72468E5929A94ED70045C3B5 /* ShowRecordViewController.swift */,
+				72468E5729A949D90045C3B5 /* RecordViewController.swift */,
 				72468E2729A938970045C3B5 /* AppDelegate.swift */,
 				72468E2929A938970045C3B5 /* SceneDelegate.swift */,
 				72468E2B29A938970045C3B5 /* ViewController.swift */,
@@ -259,8 +265,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				72468E2C29A938970045C3B5 /* ViewController.swift in Sources */,
+				72468E5829A949D90045C3B5 /* RecordViewController.swift in Sources */,
 				72468E2829A938970045C3B5 /* AppDelegate.swift in Sources */,
 				72468E2A29A938970045C3B5 /* SceneDelegate.swift in Sources */,
+				72468E5A29A94ED70045C3B5 /* ShowRecordViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -445,6 +453,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -473,6 +482,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
