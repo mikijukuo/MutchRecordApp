@@ -19,9 +19,6 @@ class RecordViewController: UIViewController, UIPickerViewDataSource, UIPickerVi
     @IBOutlet weak var playerWeapon3: UITextField!
     @IBOutlet weak var playerWeapon4: UITextField!
     
-    var stageSelectPickerView: UIPickerView?
-    
-    
     let stageList = ["ユノハナ大渓谷",
                      "ゴンズイ地区",
                      "ヤガラ市場",
@@ -37,66 +34,11 @@ class RecordViewController: UIViewController, UIPickerViewDataSource, UIPickerVi
         navigationItem.title = "記録をする"
         ContinueButton.setTitle("次の試合を記録する", for: UIControl.State.normal)
 
-        
         createPicker()
         
     }
     
-    @objc func dismissKeyboard() {
-        self.view.endEditing(true)
-    }
-    
-    func numberOfComponents(in pickerView: UIPickerView) -> Int {
-        return 1
-    }
-    
-    func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
-        switch pickerView.tag{
-        case 0:
-            return stageList.count
-        case 1,2,3,4:
-            return weaponList.count
-        default:
-            return 0
-        }
-        
-        
-    }
-    
-    //表示内容
-    func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
-        switch pickerView.tag{
-        case 0:
-            return stageList[row]
-        case 1,2,3,4:
-            return weaponList[row]
-        default:
-            return "error"
-        }
-        
-    }
-    
-    //選択時の処理
-    func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
-        switch pickerView.tag{
-        case 0:
-            stageSelectField.text = stageList[row]
-        case 1:
-            playerWeapon1.text = weaponList[row]
-            PlayerWeaponSingleton.shared.playerWeapon1 = stageList[row]
-        case 2:
-            playerWeapon2.text = weaponList[row]
-            PlayerWeaponSingleton.shared.playerWeapon2 = stageList[row]
-        case 3:
-            playerWeapon3.text = weaponList[row]
-            PlayerWeaponSingleton.shared.playerWeapon3 = stageList[row]
-        case 4:
-            playerWeapon4.text = weaponList[row]
-            PlayerWeaponSingleton.shared.playerWeapon4 = stageList[row]
-        default:
-            break
-        }
-    }
+   
     @IBAction func winButtonAction(_ sender: Any) {
         //TODO
     }
@@ -180,15 +122,61 @@ class RecordViewController: UIViewController, UIPickerViewDataSource, UIPickerVi
         
     }
     
-    @objc func donePicker() {
-        
-        view.endEditing(true)
-        
+    func numberOfComponents(in pickerView: UIPickerView) -> Int {
+        return 1
     }
-    @objc func cancelPicker(){
-        
+    
+    func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
+        switch pickerView.tag{
+        case 0:
+            return stageList.count
+        case 1,2,3,4:
+            return weaponList.count
+        default:
+            return 0
+        }
+    }
+    
+    //表示内容
+    func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
+        switch pickerView.tag{
+        case 0:
+            return stageList[row]
+        case 1,2,3,4:
+            return weaponList[row]
+        default:
+            return "error"
+        }
+    }
+    
+    //選択時の処理
+    func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
+        switch pickerView.tag{
+        case 0:
+            stageSelectField.text = stageList[row]
+        case 1:
+            playerWeapon1.text = weaponList[row]
+            PlayerWeaponSingleton.shared.playerWeapon1 = stageList[row]
+        case 2:
+            playerWeapon2.text = weaponList[row]
+            PlayerWeaponSingleton.shared.playerWeapon2 = stageList[row]
+        case 3:
+            playerWeapon3.text = weaponList[row]
+            PlayerWeaponSingleton.shared.playerWeapon3 = stageList[row]
+        case 4:
+            playerWeapon4.text = weaponList[row]
+            PlayerWeaponSingleton.shared.playerWeapon4 = stageList[row]
+        default:
+            break
+        }
+    }
+    
+    @objc func donePicker() {
         view.endEditing(true)
     }
     
+    @objc func cancelPicker(){
+        view.endEditing(true)
+    }
     
 }
