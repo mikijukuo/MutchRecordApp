@@ -64,10 +64,35 @@
                     <view key="view" contentMode="scaleToFill" id="gib-5s-YJs">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ndG-Pk-OtN">
+                                <rect key="frame" x="298" y="733" width="75" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                <connections>
+                                    <action selector="toRecordViewAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="wZC-Pr-W9y"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="S10-uP-gOL"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="S10-uP-gOL" firstAttribute="bottom" secondItem="ndG-Pk-OtN" secondAttribute="bottom" constant="50" id="3g1-GM-EjO"/>
+                            <constraint firstItem="S10-uP-gOL" firstAttribute="trailing" secondItem="ndG-Pk-OtN" secondAttribute="trailing" constant="20" id="SPL-YY-bqU"/>
+                        </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="xVi-B7-V73"/>
+                    <navigationItem key="navigationItem" id="xVi-B7-V73">
+                        <barButtonItem key="rightBarButtonItem" title="記録を終了" style="done" id="kcw-hJ-As2">
+                            <connections>
+                                <action selector="ContinueButton:" destination="JTc-qj-R0P" id="cWm-x1-k03"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="BackButton" destination="xVi-B7-V73" id="iUl-SW-8OQ"/>
+                        <outlet property="ContinueButton" destination="ndG-Pk-OtN" id="jag-bV-Bj6"/>
+                        <outlet property="FinishButton" destination="kcw-hJ-As2" id="6VC-8V-7cT"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hwR-A5-wzR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
