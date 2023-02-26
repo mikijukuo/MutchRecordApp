@@ -19,6 +19,8 @@ class RecordViewController: UIViewController, UIPickerViewDataSource, UIPickerVi
     @IBOutlet weak var playerWeapon3: UITextField!
     @IBOutlet weak var playerWeapon4: UITextField!
     
+    var result: [String] = ["","","","","","",""]
+    
     let stageList = ["ユノハナ大渓谷",
                      "ゴンズイ地区",
                      "ヤガラ市場",
@@ -40,11 +42,12 @@ class RecordViewController: UIViewController, UIPickerViewDataSource, UIPickerVi
     
    
     @IBAction func winButtonAction(_ sender: Any) {
-        //TODO
+        saveResult(isWin: true)
     }
     
     @IBAction func loseButtonAction(_ sender: Any) {
-        //TODO
+        saveResult(isWin: false)
+        
     }
     
     
@@ -68,6 +71,40 @@ class RecordViewController: UIViewController, UIPickerViewDataSource, UIPickerVi
     }
     
     @IBAction func ContinueButton(_ sender: Any) {
+        
+        
+    }
+    private func setResult(isWin:Bool){
+        let date = Date()
+        let formatter = DateFormatter()
+        formatter.dateFormat = "yyyyMMddmm"
+        let strDate = formatter.string(from: date)
+        
+        self.result[0] = strDate
+        self.result[1] = self.stageSelectField.text!
+        self.result[2] = self.playerWeapon1.text!
+        self.result[3] = self.playerWeapon2.text!
+        self.result[4] = self.playerWeapon3.text!
+        self.result[5] = self.playerWeapon4.text!
+        self.result[6] = isWin ? "WIN" : "LOSE"
+        self.dismiss(animated: true, completion: nil)
+    }
+    
+    func saveResult(isWin:Bool){
+        
+        let alert = UIAlertController(title: "結果の保存", message: "結果を保存しますか", preferredStyle: .alert)
+        let ok = UIAlertAction(title: "OK", style: .default) { (action) in
+            self.setResult(isWin: isWin)
+            FileManager.saveData(data: self.result)
+            FileManager.readSaveData()
+            
+        }
+        let cancel = UIAlertAction(title: "キャンセル", style: .cancel) { (acrion) in
+            self.dismiss(animated: true, completion: nil)
+        }
+        alert.addAction(cancel)
+        alert.addAction(ok)
+        present(alert, animated: true, completion: nil)
         
         
     }
