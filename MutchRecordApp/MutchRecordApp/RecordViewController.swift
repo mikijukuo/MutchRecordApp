@@ -10,7 +10,6 @@ import UIKit
 class RecordViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDelegate, UITextFieldDelegate {
     
     @IBOutlet weak var BackButton: UINavigationItem!
-    @IBOutlet weak var ContinueButton: UIButton!
     @IBOutlet weak var FinishButton: UIBarButtonItem!
     @IBOutlet weak var stageSelectField: UITextField!
     
@@ -21,12 +20,14 @@ class RecordViewController: UIViewController, UIPickerViewDataSource, UIPickerVi
     
     var result: [String] = ["","","","","","",""]
     
+    //ステージ
     let stageList = ["ユノハナ大渓谷",
                      "ゴンズイ地区",
                      "ヤガラ市場",
                      "マテガイ放水路",
                      "ナメロウ金属"]
     
+    //武器
     let weaponList = ["シャープマーカー",
                       "ジムワイパー"]
     
@@ -34,7 +35,6 @@ class RecordViewController: UIViewController, UIPickerViewDataSource, UIPickerVi
     override func viewDidLoad() {
         super.viewDidLoad()
         navigationItem.title = "記録をする"
-        ContinueButton.setTitle("次の試合を記録する", for: UIControl.State.normal)
 
         createPicker()
         
@@ -52,6 +52,7 @@ class RecordViewController: UIViewController, UIPickerViewDataSource, UIPickerVi
     
     
     @IBAction func endRecordButtonAction(_ sender: Any) {
+        //『記録を終了』アラートの表示
         let alert = UIAlertController(title: "記録の終了", message: "記録を終了してもよろしいですか？", preferredStyle: .alert)
         
         let delete = UIAlertAction(title: "終了", style: .default, handler: { (action) -> Void in
@@ -70,10 +71,6 @@ class RecordViewController: UIViewController, UIPickerViewDataSource, UIPickerVi
         
     }
     
-    @IBAction func ContinueButton(_ sender: Any) {
-        
-        
-    }
     private func setResult(isWin:Bool){
         let date = Date()
         let formatter = DateFormatter()

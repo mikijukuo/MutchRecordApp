@@ -65,14 +65,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ndG-Pk-OtN">
-                                <rect key="frame" x="298" y="733.66666666666663" width="75" height="34.333333333333371"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Button"/>
-                                <connections>
-                                    <action selector="ContinueButton:" destination="JTc-qj-R0P" eventType="touchUpInside" id="YqO-o8-TAs"/>
-                                </connections>
-                            </button>
                             <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Vfl-2B-7am">
                                 <rect key="frame" x="60" y="123" width="273" height="30"/>
                                 <constraints>
@@ -220,12 +212,10 @@
                         <viewLayoutGuide key="safeArea" id="S10-uP-gOL"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="S10-uP-gOL" firstAttribute="bottom" secondItem="ndG-Pk-OtN" secondAttribute="bottom" constant="50" id="3g1-GM-EjO"/>
                             <constraint firstItem="MEm-5q-hfu" firstAttribute="top" secondItem="Vfl-2B-7am" secondAttribute="bottom" constant="20" id="Agu-xH-cWo"/>
                             <constraint firstItem="Vfl-2B-7am" firstAttribute="top" secondItem="S10-uP-gOL" secondAttribute="top" constant="20" id="CbE-d2-feb"/>
                             <constraint firstItem="S10-uP-gOL" firstAttribute="trailing" secondItem="cJb-eV-bCb" secondAttribute="trailing" constant="60" id="ODc-Yc-HyL"/>
                             <constraint firstItem="cJb-eV-bCb" firstAttribute="top" secondItem="MEm-5q-hfu" secondAttribute="bottom" constant="50" id="RSv-BI-G9o"/>
-                            <constraint firstItem="S10-uP-gOL" firstAttribute="trailing" secondItem="ndG-Pk-OtN" secondAttribute="trailing" constant="20" id="SPL-YY-bqU"/>
                             <constraint firstItem="Vfl-2B-7am" firstAttribute="leading" secondItem="S10-uP-gOL" secondAttribute="leading" constant="60" id="cFM-xJ-H12"/>
                             <constraint firstItem="52d-C5-JuS" firstAttribute="leading" secondItem="S10-uP-gOL" secondAttribute="leading" constant="60" id="car-O1-zzd"/>
                             <constraint firstItem="S10-uP-gOL" firstAttribute="trailing" secondItem="Vfl-2B-7am" secondAttribute="trailing" constant="60" id="cuF-J7-j4t"/>
@@ -243,7 +233,6 @@
                     </navigationItem>
                     <connections>
                         <outlet property="BackButton" destination="xVi-B7-V73" id="iUl-SW-8OQ"/>
-                        <outlet property="ContinueButton" destination="ndG-Pk-OtN" id="nxH-CN-G4H"/>
                         <outlet property="FinishButton" destination="kcw-hJ-As2" id="dkU-nu-TD8"/>
                         <outlet property="playerWeapon1" destination="TRc-3d-tLk" id="lzq-OC-rNK"/>
                         <outlet property="playerWeapon2" destination="XhD-n5-8gh" id="2gj-DW-OKj"/>
