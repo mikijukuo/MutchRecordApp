@@ -95,6 +95,12 @@ class RecordViewController: UIViewController, UIPickerViewDataSource, UIPickerVi
             FileManager.saveData(data: self.result)
             FileManager.readSaveData()
             
+            //WIN or LOSEで保存したときにテキストを空にする
+            self.stageSelectField.text = ""
+            self.playerWeapon1.text = ""
+            self.playerWeapon2.text = ""
+            self.playerWeapon3.text = ""
+            self.playerWeapon4.text = ""
         }
         let cancel = UIAlertAction(title: "キャンセル", style: .cancel) { (acrion) in
             self.dismiss(animated: true, completion: nil)
