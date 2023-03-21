@@ -22,7 +22,6 @@ class ViewController: UIViewController {
     }
 
     @IBAction func toRecordViewAction(_ sender: Any) {
-
         
     }
     

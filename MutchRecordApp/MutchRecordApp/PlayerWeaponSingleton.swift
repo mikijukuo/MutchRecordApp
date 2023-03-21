@@ -8,6 +8,7 @@
 import Foundation
 
 class PlayerWeaponSingleton {
+    var date = ""
     var playerWeapon1 = ""
     var playerWeapon2 = ""
     var playerWeapon3 = ""

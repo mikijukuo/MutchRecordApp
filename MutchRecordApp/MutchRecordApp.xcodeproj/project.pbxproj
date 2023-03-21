@@ -19,7 +19,7 @@
 		72468E4B29A938990045C3B5 /* MutchRecordAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72468E4A29A938990045C3B5 /* MutchRecordAppUITestsLaunchTests.swift */; };
 		72468E5829A949D90045C3B5 /* RecordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72468E5729A949D90045C3B5 /* RecordViewController.swift */; };
 		72468E5A29A94ED70045C3B5 /* ShowRecordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72468E5929A94ED70045C3B5 /* ShowRecordViewController.swift */; };
-		726AF9E129AB55C800076732 /* FileManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 726AF9E029AB55C800076732 /* FileManager.swift */; };
+		726AF9E129AB55C800076732 /* AppFileManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 726AF9E029AB55C800076732 /* AppFileManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,7 +56,7 @@
 		72468E4A29A938990045C3B5 /* MutchRecordAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MutchRecordAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		72468E5729A949D90045C3B5 /* RecordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordViewController.swift; sourceTree = "<group>"; };
 		72468E5929A94ED70045C3B5 /* ShowRecordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowRecordViewController.swift; sourceTree = "<group>"; };
-		726AF9E029AB55C800076732 /* FileManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileManager.swift; sourceTree = "<group>"; };
+		726AF9E029AB55C800076732 /* AppFileManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppFileManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,7 +107,7 @@
 		72468E2629A938970045C3B5 /* MutchRecordApp */ = {
 			isa = PBXGroup;
 			children = (
-				726AF9E029AB55C800076732 /* FileManager.swift */,
+				726AF9E029AB55C800076732 /* AppFileManager.swift */,
 				720D624429AA80C6003D7AC9 /* PlayerWeaponSingleton.swift */,
 				72468E5929A94ED70045C3B5 /* ShowRecordViewController.swift */,
 				72468E5729A949D90045C3B5 /* RecordViewController.swift */,
@@ -273,7 +273,7 @@
 				72468E2C29A938970045C3B5 /* ViewController.swift in Sources */,
 				720D624529AA80C6003D7AC9 /* PlayerWeaponSingleton.swift in Sources */,
 				72468E5829A949D90045C3B5 /* RecordViewController.swift in Sources */,
-				726AF9E129AB55C800076732 /* FileManager.swift in Sources */,
+				726AF9E129AB55C800076732 /* AppFileManager.swift in Sources */,
 				72468E2829A938970045C3B5 /* AppDelegate.swift in Sources */,
 				72468E2A29A938970045C3B5 /* SceneDelegate.swift in Sources */,
 				72468E5A29A94ED70045C3B5 /* ShowRecordViewController.swift in Sources */,
@@ -456,6 +456,7 @@
 				DEVELOPMENT_TEAM = DJ5269D7TR;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = MutchRecordApp/Info.plist;
+				INFOPLIST_KEY_LSSupportsOpeningDocumentsInPlace = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -485,6 +486,7 @@
 				DEVELOPMENT_TEAM = DJ5269D7TR;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = MutchRecordApp/Info.plist;
+				INFOPLIST_KEY_LSSupportsOpeningDocumentsInPlace = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
