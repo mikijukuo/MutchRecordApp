@@ -1,0 +1,6 @@
+framework module Pods_MutchRecordApp_MutchRecordAppUITests {
+  umbrella header "Pods-MutchRecordApp-MutchRecordAppUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}

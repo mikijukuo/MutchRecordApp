@@ -25,12 +25,21 @@ class RecordViewController: UIViewController, UIPickerViewDataSource, UIPickerVi
                      "ゴンズイ地区",
                      "ヤガラ市場",
                      "マテガイ放水路",
-                     "ナメロウ金属"]
+                     "ナメロウ金属",
+                     "アマ美術大学",
+                     "ヒラメが丘団地"]
     
     //武器
     let weaponList = ["シャープマーカー",
-                      "ジムワイパー"]
-    
+                      "シャープマーカーネオ",
+                      "スプラシューター",
+                      "スクリュースロッシャー",
+                      "ヒッセンヒュー",
+                      "ジムワイパー",
+                      "エクスプロッシャー",
+                      "バレルスピナー",
+                      "ヴァリアブルローラー",
+                      "ラクト"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -42,12 +51,17 @@ class RecordViewController: UIViewController, UIPickerViewDataSource, UIPickerVi
     
    
     @IBAction func winButtonAction(_ sender: Any) {
-        saveResult(isWin: true)
+        setResult(isWin: true)
+        if checkData(){
+            saveResult(isWin: true)
+        }
     }
     
     @IBAction func loseButtonAction(_ sender: Any) {
-        saveResult(isWin: false)
-        
+        setResult(isWin: false)
+        if checkData(){
+            saveResult(isWin: false)
+        }
     }
     
     
@@ -94,7 +108,6 @@ class RecordViewController: UIViewController, UIPickerViewDataSource, UIPickerVi
             self.setResult(isWin: isWin)
             print(self.result[0])
             AppFileManager.saveData(date: self.result[0],data: self.result)
-            AppFileManager.readSaveData()
         }
         let cancel = UIAlertAction(title: "キャンセル", style: .cancel) { (acrion) in
             self.dismiss(animated: true, completion: nil)
@@ -154,6 +167,21 @@ class RecordViewController: UIViewController, UIPickerViewDataSource, UIPickerVi
         playerWeapon3.inputAccessoryView = toolBar
         playerWeapon4.inputAccessoryView = toolBar
         
+    }
+    
+    private func checkData() -> Bool{
+        if (self.result[1] == "" || self.result[2] == "" || self.result[3] == "" || self.result[4] == "" || self.result[5] == ""){
+            let alert = UIAlertController(title: "入力データに誤りがあります", message: "入力が正しくありません", preferredStyle: .alert)
+            let ok = UIAlertAction(title: "OK", style: .default) { (action) in
+
+            }
+            alert.addAction(ok)
+            
+            present(alert, animated: true, completion: nil)
+            return false
+        }else{
+            return true
+        }
     }
     
     func numberOfComponents(in pickerView: UIPickerView) -> Int {
