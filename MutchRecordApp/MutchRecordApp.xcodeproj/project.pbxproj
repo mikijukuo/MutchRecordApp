@@ -3,11 +3,14 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 56;
+	objectVersion = 55;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1C23420C21D6DA742CD81023 /* Pods_MutchRecordApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00B99C3A340AD23C0B8D489F /* Pods_MutchRecordApp.framework */; };
+		28EA7ED0659FBF66BC68193B /* Pods_MutchRecordAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C4A2E567843E21C5BEE676B9 /* Pods_MutchRecordAppTests.framework */; };
 		720D624529AA80C6003D7AC9 /* PlayerWeaponSingleton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 720D624429AA80C6003D7AC9 /* PlayerWeaponSingleton.swift */; };
+		7242A45329C9835300A57C62 /* CalculateData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7242A45229C9835300A57C62 /* CalculateData.swift */; };
 		72468E2829A938970045C3B5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72468E2729A938970045C3B5 /* AppDelegate.swift */; };
 		72468E2A29A938970045C3B5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72468E2929A938970045C3B5 /* SceneDelegate.swift */; };
 		72468E2C29A938970045C3B5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72468E2B29A938970045C3B5 /* ViewController.swift */; };
@@ -20,6 +23,7 @@
 		72468E5829A949D90045C3B5 /* RecordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72468E5729A949D90045C3B5 /* RecordViewController.swift */; };
 		72468E5A29A94ED70045C3B5 /* ShowRecordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72468E5929A94ED70045C3B5 /* ShowRecordViewController.swift */; };
 		726AF9E129AB55C800076732 /* AppFileManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 726AF9E029AB55C800076732 /* AppFileManager.swift */; };
+		D18A9AE680181B246C262543 /* Pods_MutchRecordApp_MutchRecordAppUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BEFA4CE51A486A0B8F02A6A9 /* Pods_MutchRecordApp_MutchRecordAppUITests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,7 +44,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		00B99C3A340AD23C0B8D489F /* Pods_MutchRecordApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MutchRecordApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1F89D8020EA4F538EDBC2221 /* Pods-MutchRecordAppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MutchRecordAppTests.debug.xcconfig"; path = "Target Support Files/Pods-MutchRecordAppTests/Pods-MutchRecordAppTests.debug.xcconfig"; sourceTree = "<group>"; };
+		2E1B42B6CFE2BA1130658F4E /* Pods-MutchRecordApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MutchRecordApp.debug.xcconfig"; path = "Target Support Files/Pods-MutchRecordApp/Pods-MutchRecordApp.debug.xcconfig"; sourceTree = "<group>"; };
+		3DB0F9912BC282B7702E4675 /* Pods-MutchRecordApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MutchRecordApp.release.xcconfig"; path = "Target Support Files/Pods-MutchRecordApp/Pods-MutchRecordApp.release.xcconfig"; sourceTree = "<group>"; };
+		67E55E07258CC32384E77C77 /* Pods-MutchRecordApp-MutchRecordAppUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MutchRecordApp-MutchRecordAppUITests.debug.xcconfig"; path = "Target Support Files/Pods-MutchRecordApp-MutchRecordAppUITests/Pods-MutchRecordApp-MutchRecordAppUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		720D624429AA80C6003D7AC9 /* PlayerWeaponSingleton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerWeaponSingleton.swift; sourceTree = "<group>"; };
+		7242A45229C9835300A57C62 /* CalculateData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculateData.swift; sourceTree = "<group>"; };
 		72468E2429A938970045C3B5 /* MutchRecordApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MutchRecordApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		72468E2729A938970045C3B5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		72468E2929A938970045C3B5 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -57,6 +67,10 @@
 		72468E5729A949D90045C3B5 /* RecordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordViewController.swift; sourceTree = "<group>"; };
 		72468E5929A94ED70045C3B5 /* ShowRecordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowRecordViewController.swift; sourceTree = "<group>"; };
 		726AF9E029AB55C800076732 /* AppFileManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppFileManager.swift; sourceTree = "<group>"; };
+		9C7FDAF8DE51D4EACD77EE3A /* Pods-MutchRecordAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MutchRecordAppTests.release.xcconfig"; path = "Target Support Files/Pods-MutchRecordAppTests/Pods-MutchRecordAppTests.release.xcconfig"; sourceTree = "<group>"; };
+		BEFA4CE51A486A0B8F02A6A9 /* Pods_MutchRecordApp_MutchRecordAppUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MutchRecordApp_MutchRecordAppUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C4A2E567843E21C5BEE676B9 /* Pods_MutchRecordAppTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MutchRecordAppTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DBC194541873B0700C0308DE /* Pods-MutchRecordApp-MutchRecordAppUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MutchRecordApp-MutchRecordAppUITests.release.xcconfig"; path = "Target Support Files/Pods-MutchRecordApp-MutchRecordAppUITests/Pods-MutchRecordApp-MutchRecordAppUITests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +78,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1C23420C21D6DA742CD81023 /* Pods_MutchRecordApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -71,6 +86,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				28EA7ED0659FBF66BC68193B /* Pods_MutchRecordAppTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,12 +94,26 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D18A9AE680181B246C262543 /* Pods_MutchRecordApp_MutchRecordAppUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		041AB43FD9A4EF0C24E67C4B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				2E1B42B6CFE2BA1130658F4E /* Pods-MutchRecordApp.debug.xcconfig */,
+				3DB0F9912BC282B7702E4675 /* Pods-MutchRecordApp.release.xcconfig */,
+				67E55E07258CC32384E77C77 /* Pods-MutchRecordApp-MutchRecordAppUITests.debug.xcconfig */,
+				DBC194541873B0700C0308DE /* Pods-MutchRecordApp-MutchRecordAppUITests.release.xcconfig */,
+				1F89D8020EA4F538EDBC2221 /* Pods-MutchRecordAppTests.debug.xcconfig */,
+				9C7FDAF8DE51D4EACD77EE3A /* Pods-MutchRecordAppTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		72468E1B29A938970045C3B5 = {
 			isa = PBXGroup;
 			children = (
@@ -91,6 +121,8 @@
 				72468E3D29A938990045C3B5 /* MutchRecordAppTests */,
 				72468E4729A938990045C3B5 /* MutchRecordAppUITests */,
 				72468E2529A938970045C3B5 /* Products */,
+				041AB43FD9A4EF0C24E67C4B /* Pods */,
+				AEDE35DCB15381A678002FC8 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -118,6 +150,7 @@
 				72468E3029A938980045C3B5 /* Assets.xcassets */,
 				72468E3229A938980045C3B5 /* LaunchScreen.storyboard */,
 				72468E3529A938980045C3B5 /* Info.plist */,
+				7242A45229C9835300A57C62 /* CalculateData.swift */,
 			);
 			path = MutchRecordApp;
 			sourceTree = "<group>";
@@ -139,6 +172,16 @@
 			path = MutchRecordAppUITests;
 			sourceTree = "<group>";
 		};
+		AEDE35DCB15381A678002FC8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				00B99C3A340AD23C0B8D489F /* Pods_MutchRecordApp.framework */,
+				BEFA4CE51A486A0B8F02A6A9 /* Pods_MutchRecordApp_MutchRecordAppUITests.framework */,
+				C4A2E567843E21C5BEE676B9 /* Pods_MutchRecordAppTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -146,9 +189,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 72468E4E29A938990045C3B5 /* Build configuration list for PBXNativeTarget "MutchRecordApp" */;
 			buildPhases = (
+				8F76633B2D5FAB911A4A56CB /* [CP] Check Pods Manifest.lock */,
 				72468E2029A938970045C3B5 /* Sources */,
 				72468E2129A938970045C3B5 /* Frameworks */,
 				72468E2229A938970045C3B5 /* Resources */,
+				FFDF1E99B8C02AAB2D4E2467 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -163,6 +208,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 72468E5129A938990045C3B5 /* Build configuration list for PBXNativeTarget "MutchRecordAppTests" */;
 			buildPhases = (
+				3E49D7285945C4C7B09F3FB4 /* [CP] Check Pods Manifest.lock */,
 				72468E3629A938990045C3B5 /* Sources */,
 				72468E3729A938990045C3B5 /* Frameworks */,
 				72468E3829A938990045C3B5 /* Resources */,
@@ -181,9 +227,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 72468E5429A938990045C3B5 /* Build configuration list for PBXNativeTarget "MutchRecordAppUITests" */;
 			buildPhases = (
+				4F66C1EA353E0CBA56BF0992 /* [CP] Check Pods Manifest.lock */,
 				72468E4029A938990045C3B5 /* Sources */,
 				72468E4129A938990045C3B5 /* Frameworks */,
 				72468E4229A938990045C3B5 /* Resources */,
+				4558D2EBEDBACFEF6BF6ECED /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -219,7 +267,7 @@
 				};
 			};
 			buildConfigurationList = 72468E1F29A938970045C3B5 /* Build configuration list for PBXProject "MutchRecordApp" */;
-			compatibilityVersion = "Xcode 14.0";
+			compatibilityVersion = "Xcode 13.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -265,6 +313,109 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		3E49D7285945C4C7B09F3FB4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MutchRecordAppTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4558D2EBEDBACFEF6BF6ECED /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MutchRecordApp-MutchRecordAppUITests/Pods-MutchRecordApp-MutchRecordAppUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MutchRecordApp-MutchRecordAppUITests/Pods-MutchRecordApp-MutchRecordAppUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MutchRecordApp-MutchRecordAppUITests/Pods-MutchRecordApp-MutchRecordAppUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4F66C1EA353E0CBA56BF0992 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MutchRecordApp-MutchRecordAppUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8F76633B2D5FAB911A4A56CB /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MutchRecordApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FFDF1E99B8C02AAB2D4E2467 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MutchRecordApp/Pods-MutchRecordApp-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MutchRecordApp/Pods-MutchRecordApp-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MutchRecordApp/Pods-MutchRecordApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		72468E2029A938970045C3B5 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -276,6 +427,7 @@
 				726AF9E129AB55C800076732 /* AppFileManager.swift in Sources */,
 				72468E2829A938970045C3B5 /* AppDelegate.swift in Sources */,
 				72468E2A29A938970045C3B5 /* SceneDelegate.swift in Sources */,
+				7242A45329C9835300A57C62 /* CalculateData.swift in Sources */,
 				72468E5A29A94ED70045C3B5 /* ShowRecordViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -448,6 +600,7 @@
 		};
 		72468E4F29A938990045C3B5 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2E1B42B6CFE2BA1130658F4E /* Pods-MutchRecordApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -478,6 +631,7 @@
 		};
 		72468E5029A938990045C3B5 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3DB0F9912BC282B7702E4675 /* Pods-MutchRecordApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -508,6 +662,7 @@
 		};
 		72468E5229A938990045C3B5 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1F89D8020EA4F538EDBC2221 /* Pods-MutchRecordAppTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -528,6 +683,7 @@
 		};
 		72468E5329A938990045C3B5 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9C7FDAF8DE51D4EACD77EE3A /* Pods-MutchRecordAppTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -548,6 +704,7 @@
 		};
 		72468E5529A938990045C3B5 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 67E55E07258CC32384E77C77 /* Pods-MutchRecordApp-MutchRecordAppUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -566,6 +723,7 @@
 		};
 		72468E5629A938990045C3B5 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DBC194541873B0700C0308DE /* Pods-MutchRecordApp-MutchRecordAppUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;

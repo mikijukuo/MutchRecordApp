@@ -1,0 +1,6 @@
+framework module Pods_MutchRecordApp {
+  umbrella header "Pods-MutchRecordApp-umbrella.h"
+
+  export *
+  module * { export * }
+}

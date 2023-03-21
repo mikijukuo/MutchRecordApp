@@ -26,7 +26,7 @@ class ViewController: UIViewController {
     }
     
     @IBAction func toShowRecordViewAction(_ sender: Any) {
-
+        CalculateData.countWinData()
     }
 
 }
