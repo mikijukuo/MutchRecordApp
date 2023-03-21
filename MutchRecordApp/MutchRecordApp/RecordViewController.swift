@@ -74,7 +74,7 @@ class RecordViewController: UIViewController, UIPickerViewDataSource, UIPickerVi
     private func setResult(isWin:Bool){
         let date = Date()
         let formatter = DateFormatter()
-        formatter.dateFormat = "yyyyMMddmm"
+        formatter.dateFormat = "yyyyMMddmmss"
         let strDate = formatter.string(from: date)
         
         self.result[0] = strDate
@@ -92,9 +92,9 @@ class RecordViewController: UIViewController, UIPickerViewDataSource, UIPickerVi
         let alert = UIAlertController(title: "結果の保存", message: "結果を保存しますか", preferredStyle: .alert)
         let ok = UIAlertAction(title: "OK", style: .default) { (action) in
             self.setResult(isWin: isWin)
-            FileManager.saveData(data: self.result)
-            FileManager.readSaveData()
-            
+            print(self.result[0])
+            AppFileManager.saveData(date: self.result[0],data: self.result)
+            AppFileManager.readSaveData()
         }
         let cancel = UIAlertAction(title: "キャンセル", style: .cancel) { (acrion) in
             self.dismiss(animated: true, completion: nil)
