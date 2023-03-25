@@ -218,16 +218,16 @@ class RecordViewController: UIViewController, UIPickerViewDataSource, UIPickerVi
             stageSelectField.text = stageList[row]
         case 1:
             playerWeapon1.text = weaponList[row]
-            PlayerWeaponSingleton.shared.playerWeapon1 = stageList[row]
+            PlayerWeaponSingleton.shared.playerWeapon1 = weaponList[row]
         case 2:
             playerWeapon2.text = weaponList[row]
-            PlayerWeaponSingleton.shared.playerWeapon2 = stageList[row]
+            PlayerWeaponSingleton.shared.playerWeapon2 = weaponList[row]
         case 3:
             playerWeapon3.text = weaponList[row]
-            PlayerWeaponSingleton.shared.playerWeapon3 = stageList[row]
+            PlayerWeaponSingleton.shared.playerWeapon3 = weaponList[row]
         case 4:
             playerWeapon4.text = weaponList[row]
-            PlayerWeaponSingleton.shared.playerWeapon4 = stageList[row]
+            PlayerWeaponSingleton.shared.playerWeapon4 = weaponList[row]
         default:
             break
         }
