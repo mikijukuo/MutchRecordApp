@@ -21,7 +21,7 @@ class RecordViewController: UIViewController, UIPickerViewDataSource, UIPickerVi
     var result: [String] = ["","","","","","",""]
     
     //ステージ
-    let stageList = ["ユノハナ大渓谷",
+    var stageList = ["ユノハナ大渓谷",
                      "ゴンズイ地区",
                      "ヤガラ市場",
                      "マテガイ放水路",
@@ -108,6 +108,8 @@ class RecordViewController: UIViewController, UIPickerViewDataSource, UIPickerVi
             self.setResult(isWin: isWin)
             print(self.result[0])
             AppFileManager.saveData(date: self.result[0],data: self.result)
+            self.removeStageList()
+            
         }
         let cancel = UIAlertAction(title: "キャンセル", style: .cancel) { (acrion) in
             self.dismiss(animated: true, completion: nil)
@@ -169,6 +171,12 @@ class RecordViewController: UIViewController, UIPickerViewDataSource, UIPickerVi
         
     }
     
+    func removeStageList(){
+        if stageList.contains(PlayerWeaponSingleton.shared.lastStage) {
+            stageList.removeAll(where: { $0 == PlayerWeaponSingleton.shared.lastStage })
+        }
+    }
+    
     private func checkData() -> Bool{
         if (self.result[1] == "" || self.result[2] == "" || self.result[3] == "" || self.result[4] == "" || self.result[5] == ""){
             let alert = UIAlertController(title: "入力データに誤りがあります", message: "入力が正しくありません", preferredStyle: .alert)
@@ -216,6 +224,7 @@ class RecordViewController: UIViewController, UIPickerViewDataSource, UIPickerVi
         switch pickerView.tag{
         case 0:
             stageSelectField.text = stageList[row]
+            PlayerWeaponSingleton.shared.lastStage = stageList[row]
         case 1:
             playerWeapon1.text = weaponList[row]
             PlayerWeaponSingleton.shared.playerWeapon1 = weaponList[row]

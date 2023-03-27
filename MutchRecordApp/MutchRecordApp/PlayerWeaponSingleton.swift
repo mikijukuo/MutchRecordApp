@@ -25,6 +25,7 @@ class PlayerWeaponSingleton {
     var hirameLoseCount = 0
     
     var date = ""
+    var lastStage = ""
     var playerWeapon1 = ""
     var playerWeapon2 = ""
     var playerWeapon3 = ""
